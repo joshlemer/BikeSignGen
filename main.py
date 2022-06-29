@@ -1,5 +1,7 @@
+import os
 import xml.etree.ElementTree as ET
 import csv
+import itertools
 
 destinations = [{
     'name': "Josh's",
@@ -54,9 +56,9 @@ def set_hidden(elem: ET.Element, is_hidden):
 def set_text(elem: ET.Element, text):
     elem[0].text = text
 
-
 def apply_destination(root, destination, position):
-    has_icons = len(destination['icons']) != 0
+    print(destination)
+    has_icons = 'icons' in destination and len(destination['icons']) != 0
     name_id_no_icons, name_id_with_icons = (f'''Destination{position}.{'WithIcons.' if with_icons else ''}Name''' for with_icons in (False, True))
 
     shown_name_id, hidden_name_id = name_id_no_icons, name_id_with_icons 
@@ -66,24 +68,39 @@ def apply_destination(root, destination, position):
     shown_name_elem: ET.Element = find_elem_by_id(root, shown_name_id)
     hidden_name_elem: ET.Element = find_elem_by_id(root, hidden_name_id)
 
-    set_hidden(shown_name_elem, is_hidden=False)
+    if 'name' in destination:
+        set_hidden(shown_name_elem, is_hidden=False)
+        set_text(shown_name_elem, destination['name'])
+    else:
+        set_hidden(shown_name_elem, is_hidden=True)
+
     set_hidden(hidden_name_elem, is_hidden=True)
 
-    set_text(shown_name_elem, destination['name'])
-
     for icon in ('Dining', 'Grocery', 'Skytrain', 'Washroom'):
-        set_hidden(find_elem_by_id(root, f'Destination{position}.Icon.{icon}'), icon not in destination['icons'])
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Icon.{icon}'), 'icons' not in destination or icon not in destination['icons'])
     
     for direction in ('Left', 'Right', 'Up'):
-        set_hidden(find_elem_by_id(root, f'Destination{position}.Direction.{direction}'), direction != destination['direction'])
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Direction.{direction}'), 'direction' not in destination or direction != destination['direction'])
 
-    set_text(find_elem_by_id(root, f'Destination{position}.Distance'), destination['distance'])
-    set_text(find_elem_by_id(root, f'Destination{position}.TravelTime'), destination['travelTime'])
-    set_text(find_elem_by_id(root, f'Destination{position}.ElevationGain'), destination['elevationGain'])
+    if 'distance' in destination:
+        set_text(find_elem_by_id(root, f'Destination{position}.Distance'), destination['distance'])
+    else:
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Distance'), True)
+
+    if 'travelTime' in destination:
+        set_text(find_elem_by_id(root, f'Destination{position}.TravelTime'), destination['travelTime'])
+    else:
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Icon.TravelTime'), True)
+        set_hidden(find_elem_by_id(root, f'Destination{position}.TravelTime'), True)
+    
+    if 'elevationGain' in destination:
+        set_text(find_elem_by_id(root, f'Destination{position}.ElevationGain'), destination['elevationGain'])
+    else:
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Icon.ElevationGain'), True)
+        set_hidden(find_elem_by_id(root, f'Destination{position}.ElevationGain'), True)
 
     for comfort in ('Circle', 'Square', 'Diamond'):
-        set_hidden(find_elem_by_id(root, f'Destination{position}.Comfort.{comfort}'), comfort != destination['comfort'])
-
+        set_hidden(find_elem_by_id(root, f'Destination{position}.Comfort.{comfort}'), 'comfort' not in destination or comfort != destination['comfort'])
 
 ## Returns iterable of dicts 
 def parse_csv(file_name):
@@ -99,25 +116,47 @@ def parse_csv(file_name):
         'comfort': 'Circle',
     }
     '''
+
     def parse_row(row):
 
-        def copy_if_not_empty(from_dict, to_dict, field):
-            value = from_dict[field]
+        def copy_if_not_empty(from_dict, from_field, to_dict, to_field):
+            value = from_dict[from_field]
             if value:
-                to_dict[field] = value
+                to_dict[to_field] = value
         
         result = {}
 
-        for field in ('name', 'distance', 'travelTime', 'elevationGain', 'direction', 'comfort'):
-            copy_if_not_empty(row, result, field)
+        for from_field, to_field in {
+            'Sign Location Name':'location',
+            'Destination Name': 'name', 
+            'Distance': 'distance', 
+            'Travel Time': 'travelTime', 
+            'Elevation Gain': 'elevationGain', 
+            'Comfort': 'comfort',
+            }.items():
+            copy_if_not_empty(row, from_field, result, to_field)
         
-
+        if 'Direction' in row:
+            if direction := row['Direction'].strip():
+                result['direction'] = f'{direction[0].upper()}{direction[1:]}'
+            
+            
         
+        icons = set()
+        for field, icon in {
+            'Has Dining': 'Dining',
+            'Has Grocery': 'Grocery',
+            'Has Skytrain': 'Skytrain',
+            'Has Washroom': 'Washroom',
+            }.items():
+            if field in row and row[field]:
+                icons.add(icon)
 
+        result['icons'] = icons
+        return result 
 
-        return row
     with open(file_name,newline='') as csvfile:
-        return [row for row in csv.DictReader(csvfile)]
+        return [parse_row(row) for row in csv.DictReader(csvfile)]
  
 
 
@@ -132,10 +171,37 @@ def parse_csv(file_name):
 
 #     root.write('out/testing.svg')
 
+# main()
+
+
+def main():
+    out_dir = os.path.join('out','test1')
+    csv_data = parse_csv('data/testing_data.csv')
+    locations = [(location, list(destinations)) for location, destinations in itertools.groupby(csv_data, lambda x: x['location'])]
+
+    template_path = 'templates/trifold_landscape.svg'
+
+    for location, destinations in locations:
+
+        destination_groups = []
+        for i, destination in enumerate(destinations):
+            if i % 3 == 0:
+                destination_groups.append([])
+            destination_groups[-1].append(destination)
+
+        for group_num, group in enumerate(destination_groups):
+            root = ET.parse(template_path)
+            for i in range(3):
+                if len(group) > i:
+                    apply_destination(root, group[i], i)
+                else:
+                    apply_destination(root, {}, i)
+            
+            root.write(os.path.join(out_dir, f"{location.replace(' ', '_')}_{group_num+1}of{len(destination_groups)}.svg"))
+        
+
 
 main()
-
-
 
 def test():
 
@@ -149,6 +215,12 @@ def test():
     p = f""".//*[@id="{id}"]"""
     root.find(p)
 
+
+
+    with open('data/testing_data.csv',newline='') as csvfile:
+        d = [row for row in csv.DictReader(csvfile)]
+    
+    d[0]
 
     return 
 

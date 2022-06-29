@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.98388341"
-     inkscape:cx="560.02571"
+     inkscape:cx="560.0257"
      inkscape:cy="365.38882"
      inkscape:window-width="1741"
      inkscape:window-height="1067"
-     inkscape:window-x="70"
-     inkscape:window-y="25"
+     inkscape:window-x="51"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      inkscape:snap-others="false"
@@ -342,7 +342,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect226993);shape-padding:0;shape-margin:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12057">BCIT</tspan></text>
+         id="tspan13858">BCIT</tspan></text>
     <path
        id="Destination0.Direction.Left"
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.202318px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -354,7 +354,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect226975);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12059">2.7km</tspan></text>
+         id="tspan13860">2.7km</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.39548355,0,0,0.39548355,805.78194,-205.63287)"
@@ -362,9 +362,9 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect226977);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12061">25m</tspan></text>
+         id="tspan13862">25m</tspan></text>
     <g
-       id="g226809"
+       id="Destination0.Icon.ElevationGain"
        transform="matrix(0.99620579,0,0,0.99620579,190.35676,-380.99997)">
       <path
          id="path226789"
@@ -443,7 +443,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect104043);fill:#000000;fill-opacity:1;stroke:none" />
     <path
        d="m 89.548393,61.225029 2.732152,-0.455437 -1.721901,-2.284545 c -0.892558,0.794871 -1.003573,1.74902 -1.010251,2.739982 z m -0.751588,0.167151 c -0.0044,-0.09902 -0.01997,-0.258232 -0.01997,-0.36971 0,-1.13048 0.35804,-2.22906 1.329789,-3.14207 l -1.01203,-1.237656 -1.566453,4.880928 z m -6.012396,-4.857728 0.08684,-0.271617 5.579315,-0.0075 -1.484207,4.595511 -0.06406,-0.479402 h 0.170767 l -0.02144,-0.305079 h -0.746752 l 0.02137,0.283312 h 0.192047 l 0.04265,0.523031 c 0,0 -3.755197,-4.316533 -3.776538,-4.338298 z m -2.471025,4.414562 c 0.749247,-0.607866 1.33244,-1.187177 1.753008,-2.346533 0.663788,0.615037 1.042515,1.504623 1.042515,2.419989 0,1.817797 -1.451662,3.300461 -3.231474,3.300461 -1.779782,0 -3.231382,-1.482664 -3.231382,-3.300461 0,-1.817859 1.4516,-3.300491 3.231382,-3.300491 0.568028,0 1.148693,0.167566 1.616908,0.44986 -0.31695,1.022861 -0.625222,1.550416 -1.600372,2.352204 -0.236727,0.0102 -0.4167,0.204312 -0.4167,0.435839 0,0.240099 0.191673,0.435868 0.426685,0.435868 0.235042,0 0.40943,-0.195769 0.40943,-0.446736 z m 9.349488,0.977288 c 0.365467,1.391073 1.665646,2.396723 3.104671,2.396723 1.779811,0 3.231505,-1.482662 3.231505,-3.300555 0,-1.817859 -1.451694,-3.300586 -3.231505,-3.300586 -0.56806,0 -1.225294,0.136972 -1.704803,0.423664 l 1.753945,2.378495 c 0.214512,0.0034 0.401285,0.199211 0.401285,0.435839 0,0.240099 -0.191766,0.435868 -0.426746,0.435868 -0.06506,0 -0.133356,-0.01702 -0.191049,-0.04478 z m -7.937827,-4.518422 1.1447,-3.22544 -0.362721,-0.632054 0.725443,-0.80628 h 1.55753 l 0.02137,0.457637 h -1.365545 l -0.277384,0.305078 0.320035,0.588394 -0.402439,1.456914 H 88.6758 l 0.08537,-0.266455 c -0.449242,-0.05972 -1.224075,-0.34243 -1.409133,-0.506554 -0.185058,-0.16422 -0.02303,-0.315215 0.187773,-0.32229 1.103263,-0.04787 2.742324,-0.142263 3.053717,-0.143631 0.311302,-0.0015 0.34322,0.158482 0.134791,0.391347 -0.208428,0.232834 -0.390614,0.442498 -1.18027,0.567455 l -0.213326,0.588395 1.322675,1.673684 c 0.623473,-0.386599 1.377496,-0.587724 2.110146,-0.587724 2.19804,0 3.990769,1.831054 3.990769,4.076114 0,2.24503 -1.792729,4.076051 -3.990769,4.076051 -1.8083,0 -3.398374,-1.273731 -3.865652,-3.034196 l -1.215434,0.223083 c -0.05204,0.146342 -0.173294,0.258582 -0.318163,0.346413 l 0.21679,1.050173 h 0.277351 l 0.02134,0.283313 -0.874774,0.04353 v -0.30508 H 87.22239 L 86.958143,62.65619 c -0.393235,-0.06568 -0.599262,-0.409481 -0.482162,-0.750702 l -3.970458,-4.586524 -0.177755,0.492117 c 0.963635,0.775241 1.540431,1.969428 1.540431,3.211386 0,2.24503 -1.792729,4.076051 -3.990769,4.076051 -2.19801,0 -3.990739,-1.831021 -3.990739,-4.076051 0,-2.24506 1.792729,-4.076114 3.990739,-4.076114 0.639168,0 1.293906,0.159313 1.847612,0.461524 z"
-       id="path226813"
+       id="Destination0.Icon.TravelTime"
        style="overflow:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.114444" />
     <text
        xml:space="preserve"
@@ -452,7 +452,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect226979);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12063">10min</tspan></text>
+         id="tspan13864">10min</tspan></text>
     <path
        d="m 13.80139,7.774001 v 3.925051 H 13.092091 V 7.798129 c 0,-0.195755 -0.158894,-0.35464 -0.354649,-0.35464 -0.195754,0 -0.35455,0.158885 -0.35455,0.35464 v 3.900923 H 11.673594 V 7.785357 c 0,-0.456411 -0.709299,-0.440821 -0.709299,-0.01205 v 3.9254 H 10.255097 V 7.801331 c 0,-0.483359 -0.7092988,-0.465637 -0.7092988,-0.01913 v 5.132204 c 0,0.740121 0.7092988,1.228102 1.4184968,1.228102 v 9.259026 c 0,1.418537 2.127796,1.418537 2.127796,0 v -9.258677 c 0.709299,0 1.418498,-0.589395 1.418498,-1.144391 V 7.785041 c 0,-0.452148 -0.709199,-0.434784 -0.709199,-0.01076 z m 3.191644,1.088016 v 8.865753 h 0.709299 v 5.67408 c 0,1.418527 2.482345,1.418527 2.482345,0 V 8.862017 c 0,-1.773147 -3.191644,-1.773147 -3.191644,0 z"
        id="Destination0.Icon.Dining"
@@ -509,7 +509,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect226993);shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12065">Brentwood Mall</tspan></text>
+         id="tspan13866">Brentwood Mall</tspan></text>
     <rect
        style="font-variation-settings:normal;vector-effect:none;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.319312;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke;stop-color:#000000"
        id="Destination0.Comfort.Square"
@@ -556,7 +556,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect7805);shape-padding:0;shape-margin:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12067">BCIT</tspan></text>
+         id="tspan13868">BCIT</tspan></text>
     <path
        id="Destination1.Direction.Left"
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.202318px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -568,7 +568,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7799);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12069">2.7km</tspan></text>
+         id="tspan13870">2.7km</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.39548355,0,0,0.39548355,805.78194,-136.03677)"
@@ -576,9 +576,9 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7801);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12071">25m</tspan></text>
+         id="tspan13872">25m</tspan></text>
     <g
-       id="g7757"
+       id="Destination1.Icon.ElevationGain"
        transform="matrix(0.99620579,0,0,0.99620579,190.35676,-311.40387)">
       <path
          id="path7737"
@@ -647,7 +647,7 @@
     </g>
     <path
        d="m 89.548393,130.82113 2.732152,-0.45543 -1.721901,-2.28455 c -0.892558,0.79487 -1.003573,1.74902 -1.010251,2.73998 z m -0.751588,0.16715 c -0.0044,-0.099 -0.01997,-0.25823 -0.01997,-0.36971 0,-1.13048 0.35804,-2.22906 1.329789,-3.14207 l -1.01203,-1.23765 -1.566453,4.88093 z m -6.012396,-4.85772 0.08684,-0.27162 5.579315,-0.008 -1.484207,4.59551 -0.06406,-0.4794 h 0.170767 l -0.02144,-0.30508 h -0.746752 l 0.02137,0.28331 h 0.192047 l 0.04265,0.52303 c 0,0 -3.755197,-4.31653 -3.776538,-4.3383 z m -2.471025,4.41456 c 0.749247,-0.60787 1.33244,-1.18718 1.753008,-2.34653 0.663788,0.61503 1.042515,1.50462 1.042515,2.41998 0,1.8178 -1.451662,3.30047 -3.231474,3.30047 -1.779782,0 -3.231382,-1.48267 -3.231382,-3.30047 0,-1.81785 1.4516,-3.30049 3.231382,-3.30049 0.568028,0 1.148693,0.16757 1.616908,0.44986 -0.31695,1.02286 -0.625222,1.55042 -1.600372,2.35221 -0.236727,0.0102 -0.4167,0.20431 -0.4167,0.43584 0,0.2401 0.191673,0.43586 0.426685,0.43586 0.235042,0 0.40943,-0.19576 0.40943,-0.44673 z m 9.349488,0.97729 c 0.365467,1.39107 1.665646,2.39672 3.104671,2.39672 1.779811,0 3.231505,-1.48266 3.231505,-3.30056 0,-1.81785 -1.451694,-3.30058 -3.231505,-3.30058 -0.56806,0 -1.225294,0.13697 -1.704803,0.42366 l 1.753945,2.3785 c 0.214512,0.003 0.401285,0.19921 0.401285,0.43584 0,0.2401 -0.191766,0.43586 -0.426746,0.43586 -0.06506,0 -0.133356,-0.017 -0.191049,-0.0448 z m -7.937827,-4.51843 1.1447,-3.22544 -0.362721,-0.63205 0.725443,-0.80628 h 1.55753 l 0.02137,0.45764 h -1.365545 l -0.277384,0.30508 0.320035,0.58839 -0.402439,1.45691 H 88.6758 l 0.08537,-0.26645 c -0.449242,-0.0597 -1.224075,-0.34243 -1.409133,-0.50656 -0.185058,-0.16422 -0.02303,-0.31521 0.187773,-0.32229 1.103263,-0.0479 2.742324,-0.14226 3.053717,-0.14363 0.311302,-0.002 0.34322,0.15849 0.134791,0.39135 -0.208428,0.23283 -0.390614,0.4425 -1.18027,0.56746 l -0.213326,0.58839 1.322675,1.67368 c 0.623473,-0.38659 1.377496,-0.58772 2.110146,-0.58772 2.19804,0 3.990769,1.83105 3.990769,4.07611 0,2.24503 -1.792729,4.07606 -3.990769,4.07606 -1.8083,0 -3.398374,-1.27374 -3.865652,-3.0342 l -1.215434,0.22308 c -0.05204,0.14634 -0.173294,0.25858 -0.318163,0.34642 l 0.21679,1.05017 h 0.277351 l 0.02134,0.28331 -0.874774,0.0435 v -0.30508 h 0.213389 l -0.264247,-1.04957 c -0.393235,-0.0657 -0.599262,-0.40948 -0.482162,-0.7507 l -3.970458,-4.58652 -0.177755,0.49212 c 0.963635,0.77524 1.540431,1.96942 1.540431,3.21138 0,2.24503 -1.792729,4.07605 -3.990769,4.07605 -2.19801,0 -3.990739,-1.83102 -3.990739,-4.07605 0,-2.24506 1.792729,-4.07611 3.990739,-4.07611 0.639168,0 1.293906,0.15931 1.847612,0.46152 z"
-       id="path7759"
+       id="Destination1.Icon.TravelTime"
        style="overflow:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.114444" />
     <text
        xml:space="preserve"
@@ -656,7 +656,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7803);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12073">10min</tspan></text>
+         id="tspan13874">10min</tspan></text>
     <path
        d="m 13.80139,77.370106 v 3.925051 h -0.709299 v -3.900923 c 0,-0.195755 -0.158894,-0.35464 -0.354649,-0.35464 -0.195754,0 -0.35455,0.158885 -0.35455,0.35464 v 3.900923 h -0.709298 v -3.913695 c 0,-0.456411 -0.709299,-0.440821 -0.709299,-0.01205 v 3.9254 h -0.709198 v -3.897376 c 0,-0.483359 -0.7092988,-0.465637 -0.7092988,-0.01913 v 5.132204 c 0,0.740121 0.7092988,1.228102 1.4184968,1.228102 v 9.259026 c 0,1.418537 2.127796,1.418537 2.127796,0 v -9.258677 c 0.709299,0 1.418498,-0.589395 1.418498,-1.144391 v -5.213424 c 0,-0.452148 -0.709199,-0.434784 -0.709199,-0.01076 z m 3.191644,1.088016 v 8.865753 h 0.709299 v 5.67408 c 0,1.418527 2.482345,1.418527 2.482345,0 V 78.458122 c 0,-1.773147 -3.191644,-1.773147 -3.191644,0 z"
        id="Destination1.Icon.Dining"
@@ -713,7 +713,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect7805);shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12075">Brentwood Mall</tspan></text>
+         id="tspan13876">Brentwood Mall</tspan></text>
     <rect
        style="font-variation-settings:normal;vector-effect:none;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.319312;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke;stop-color:#000000"
        id="Destination1.Comfort.Square"
@@ -750,7 +750,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect7969);shape-padding:0;shape-margin:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12077">BCIT</tspan></text>
+         id="tspan13878">BCIT</tspan></text>
     <path
        id="Destination2.Direction.Left"
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.202318px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -762,7 +762,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7963);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12079">2.7km</tspan></text>
+         id="tspan13880">2.7km</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.39548355,0,0,0.39548355,805.78194,-67.961891)"
@@ -770,9 +770,9 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7965);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12081">25m</tspan></text>
+         id="tspan13882">25m</tspan></text>
     <g
-       id="g7921"
+       id="Destination2.Icon.ElevationGain"
        transform="matrix(0.99620579,0,0,0.99620579,190.35676,-243.32899)">
       <path
          id="path7901"
@@ -841,7 +841,7 @@
     </g>
     <path
        d="m 89.548393,198.89601 2.732152,-0.45543 -1.721901,-2.28455 c -0.892558,0.79487 -1.003573,1.74902 -1.010251,2.73998 z m -0.751588,0.16715 c -0.0044,-0.099 -0.01997,-0.25823 -0.01997,-0.36971 0,-1.13048 0.35804,-2.22906 1.329789,-3.14207 l -1.01203,-1.23765 -1.566453,4.88093 z m -6.012396,-4.85772 0.08684,-0.27162 5.579315,-0.008 -1.484207,4.59551 -0.06406,-0.4794 h 0.170767 l -0.02144,-0.30508 h -0.746752 l 0.02137,0.28331 h 0.192047 l 0.04265,0.52303 c 0,0 -3.755197,-4.31653 -3.776538,-4.3383 z M 80.313384,198.62 c 0.749247,-0.60787 1.33244,-1.18718 1.753008,-2.34653 0.663788,0.61503 1.042515,1.50462 1.042515,2.41998 0,1.8178 -1.451662,3.30047 -3.231474,3.30047 -1.779782,0 -3.231382,-1.48267 -3.231382,-3.30047 0,-1.81785 1.4516,-3.30049 3.231382,-3.30049 0.568028,0 1.148693,0.16757 1.616908,0.44986 -0.31695,1.02286 -0.625222,1.55042 -1.600372,2.35221 -0.236727,0.0102 -0.4167,0.20431 -0.4167,0.43584 0,0.2401 0.191673,0.43586 0.426685,0.43586 0.235042,0 0.40943,-0.19576 0.40943,-0.44673 z m 9.349488,0.97729 c 0.365467,1.39107 1.665646,2.39672 3.104671,2.39672 1.779811,0 3.231505,-1.48266 3.231505,-3.30056 0,-1.81785 -1.451694,-3.30058 -3.231505,-3.30058 -0.56806,0 -1.225294,0.13697 -1.704803,0.42366 l 1.753945,2.3785 c 0.214512,0.003 0.401285,0.19921 0.401285,0.43584 0,0.2401 -0.191766,0.43586 -0.426746,0.43586 -0.06506,0 -0.133356,-0.017 -0.191049,-0.0448 z m -7.937827,-4.51843 1.1447,-3.22544 -0.362721,-0.63205 0.725443,-0.80628 h 1.55753 l 0.02137,0.45764 h -1.365545 l -0.277384,0.30508 0.320035,0.58839 -0.402439,1.45691 H 88.6758 l 0.08537,-0.26645 c -0.449242,-0.0597 -1.224075,-0.34243 -1.409133,-0.50656 -0.185058,-0.16422 -0.02303,-0.31521 0.187773,-0.32229 1.103263,-0.0479 2.742324,-0.14226 3.053717,-0.14363 0.311302,-0.002 0.34322,0.15849 0.134791,0.39135 -0.208428,0.23283 -0.390614,0.4425 -1.18027,0.56746 l -0.213326,0.58839 1.322675,1.67368 c 0.623473,-0.38659 1.377496,-0.58772 2.110146,-0.58772 2.19804,0 3.990769,1.83105 3.990769,4.07611 0,2.24503 -1.792729,4.07606 -3.990769,4.07606 -1.8083,0 -3.398374,-1.27374 -3.865652,-3.0342 l -1.215434,0.22308 c -0.05204,0.14634 -0.173294,0.25858 -0.318163,0.34642 l 0.21679,1.05017 h 0.277351 l 0.02134,0.28331 -0.874774,0.0435 v -0.30508 h 0.213389 l -0.264247,-1.04957 c -0.393235,-0.0657 -0.599262,-0.40948 -0.482162,-0.7507 l -3.970458,-4.58652 -0.177755,0.49212 c 0.963635,0.77524 1.540431,1.96942 1.540431,3.21138 0,2.24503 -1.792729,4.07605 -3.990769,4.07605 -2.19801,0 -3.990739,-1.83102 -3.990739,-4.07605 0,-2.24506 1.792729,-4.07611 3.990739,-4.07611 0.639168,0 1.293906,0.15931 1.847612,0.46152 z"
-       id="path7923"
+       id="Destination2.Icon.TravelTime"
        style="overflow:visible;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.114444" />
     <text
        xml:space="preserve"
@@ -850,7 +850,7 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect7967);fill:#fff1f1;fill-opacity:1;stroke:none"><tspan
          x="-1539.9238"
          y="683.46978"
-         id="tspan12083">10min</tspan></text>
+         id="tspan13884">10min</tspan></text>
     <path
        d="m 13.80139,145.44498 v 3.92506 h -0.709299 v -3.90093 c 0,-0.19575 -0.158894,-0.35464 -0.354649,-0.35464 -0.195754,0 -0.35455,0.15889 -0.35455,0.35464 v 3.90093 h -0.709298 v -3.9137 c 0,-0.45641 -0.709299,-0.44082 -0.709299,-0.0121 v 3.9254 h -0.709198 v -3.89738 c 0,-0.48335 -0.7092988,-0.46563 -0.7092988,-0.0191 v 5.13221 c 0,0.74012 0.7092988,1.2281 1.4184968,1.2281 v 9.25903 c 0,1.41853 2.127796,1.41853 2.127796,0 v -9.25868 c 0.709299,0 1.418498,-0.5894 1.418498,-1.14439 v -5.21343 c 0,-0.45214 -0.709199,-0.43478 -0.709199,-0.0108 z m 3.191644,1.08802 v 8.86575 h 0.709299 v 5.67408 c 0,1.41853 2.482345,1.41853 2.482345,0 V 146.533 c 0,-1.77315 -3.191644,-1.77315 -3.191644,0 z"
        id="Destination2.Icon.Dining"
@@ -907,7 +907,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.695px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:pre;shape-inside:url(#rect7969);shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#fff1f1;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="-1539.9238"
          y="691.61425"
-         id="tspan12085">Brentwood Mall</tspan></text>
+         id="tspan13886">Brentwood Mall</tspan></text>
     <rect
        style="font-variation-settings:normal;vector-effect:none;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.319312;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:fill markers stroke;stop-color:#000000"
        id="Destination2.Comfort.Square"

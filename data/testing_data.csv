@@ -1,0 +1,7 @@
+Sign Location Name,Destination Name,Has Dining,Has Grocery,Has Skytrain,Has Washroom,Direction,Distance,Travel Time,Elevation Gain,Comfort
+Smith Street at Garry,Dest1,x,x,,,left,10km,20min,2m,Circle
+Smith Street at Garry,Dest2,,,x,x,right,2km,1min,30m,Square
+Smith Street at Garry,Dest3,,,,,up,3km,2min,1m,Diamond
+Smith Street at Garry,Dest4,x,,,,right,1km,55m,1000m,Diamond
+Harrow at Corydon,Dest3,,,,,up,3km,2min,1m,Diamond
+Harrow at Corydon,Dest4,x,,,,right,1km,55m,1000m,Diamond
