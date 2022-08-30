@@ -1,0 +1,24 @@
+destinations:
+  cvg:
+    name: "Central Valley Greenway"
+    amenities:
+      - dining
+      - grocieries
+      - skytrain
+  metrotown:
+    name: "Metrotown"
+    amenities:
+      - dining
+      - groceries
+      - skytrain
+      - washroom
+
+signLocations:
+  - name: "Holdom Southbound at Goring"
+    destinations:
+      cvg:
+        direction: right
+        distance: 0.7km
+        travelTime: 2min
+        elevationGain: 2m
+        comfort: circle

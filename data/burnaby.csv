@@ -1,0 +1,94 @@
+Sign Location Name,Destination Name,Has Dining,Has Grocery,Has Skytrain,Has Washroom,Direction,Distance,Travel Time,Elevation Gain,Comfort
+Holdom Southbound at Goring,Central Valley Greenway,,,,,right,0.7km,2min,2m,Circle
+Holdom Southbound at Goring,BCIT,,,,,right,3.2km,11min,26m,Square
+Holdom Southbound at Goring,Downtown Vancouver,,,,,right,12.3km,49min,72m,Circle
+Holdom Southbound at Goring,Metrotown,x,x,x,x,right,5.4km,26min,122m,Square
+Holdom Southbound at Goring,New West,,,,,right,8.5km,36min,122m,Square
+Douglas Southbound at Still Creek,BCIT,,,,,up,2.1km,8min,30m,Square
+Douglas Southbound at Still Creek,Metrotown,x,x,x,x,up,4.6km,24min,125m,Square
+Douglas Southbound at Still Creek,Lougheed,x,x,x,x,up,7.1km,26min,44m,Square
+Douglas Southbound at Still Creek,Downtown Vancouver,,,,,right,11.5km,47min,70m,Circle
+Douglas Southbound at Still Creek,McDonald’s,x,,,x,right,1.6km,5min,2m,Circle
+Douglas Southbound at Still Creek,"Rupert Stn, Superstore",,x,x,x,right,4.3km,18min,27m,Circle
+Still Creek Westbound at Eastbrook,Downtown Vancouver,,,,,up,10.3km,43min,68m,Circle
+Still Creek Westbound at Eastbrook,"Rupert Stn, Superstore",,x,x,x,up,3.0km,14min,26m,Circle
+Still Creek Westbound at Eastbrook,Brentwood Mall,x,x,x,x,left,1.2km,6min,30m,Circle
+Still Creek Westbound at Eastbrook,Union/Frances,,,,,left,2.4km,12min,65m,Square
+Still Creek Westbound at Eastbrook,Burnaby Heights,,,,,left,3.3km,16min,75m,Square
+Still Creek Westbound at Gilmore,Gilmore Station,x,,x,x,up,0.4km,1min,0m,Circle
+Still Creek Westbound at Gilmore,"Rupert Stn, Superstore",,x,x,x,up,1.9km,10min,25m,Circle
+Still Creek Westbound at Gilmore,Downtown Vancouver,,,,,up,9.3km,40min,68m,Circle
+Still Creek Westbound at Gilmore,BCIT,,,,,left,1.8km,9min,32m,Square
+Still Creek Westbound at Gilmore,Metrotown,x,x,x,x,left,4.4km,27min,152m,Square
+Northbound Gilmore path at CVG,Gilmore Station,x,,x,x,up,0.3km,1min,0m,Circle
+Northbound Gilmore path at CVG,Brentwood Mall,x,x,x,x,up,1.4km,6min,28m,Square
+Northbound Gilmore path at CVG,North Vancouver,,,,,up,5.9km,26min,58m,Square
+Northbound Gilmore path at CVG,Downtown Vancouver,,,,,left,8.8km,38min,66m,Circle
+Northbound Gilmore path at CVG,"Rupert Stn, Superstore",,x,x,x,left,1.8km,7min,25m,Circle
+CVG EB @ Gilmore,Gilmore Station,x,,x,x,left,0.3km,1min,0m,Circle
+CVG EB @ Gilmore,Brentwood Mall,x,x,x,x,left,1.4km,6min,28m,Circle
+CVG EB @ Gilmore,Lougheed,x,x,x,x,left,9.3km,31min,61m,Square
+CVG EB @ Gilmore,SFU,,,,,left,8.9km,50min,250m,Diamond
+CVG EB @ Gilmore,Burnaby Heights,,,,,left,2.6km,14min,73m,Square
+CVG EB @ Gilmore,BCIT,,,,,right,1.9km,9min,31m,Square
+CVG EB @ Gilmore,Metrotown,x,x,x,x,right,4.8km,28min,155m,Square
+CVG EB @ Gilmore,New West,,,,,right,10.7km,45min,124m,Square
+Gilmore Southbound @ Still Creek,McDonald’s,x,,,x,left,0.6km,3min,0m,Circle
+Gilmore Southbound @ Still Creek,Holdom Station,x,,x,x,left,3.1km,13min,8m,Circle
+Gilmore Southbound @ Still Creek,New West,,,,,left,10.6km,44min,124m,Square
+Gilmore Southbound @ Still Creek,BCIT,,,,,up,1.8km,9min,32m,Square
+Gilmore Southbound @ Still Creek,Metrotown,x,x,x,x,up,4.8km,28min,155m,Square
+Still Creek EB @ Eastbrook,Holdom Station,x,,x,x,up,2.2km,7min,6m,Circle
+Still Creek EB @ Eastbrook,Lougheed,x,x,x,x,up,8.4km,29min,43m,Square
+Still Creek EB @ Eastbrook,New West,,,,,up,9.5km,40min,123m,Square
+Still Creek EB @ Eastbrook,Brentwood Mall,x,x,x,x,right,1.2km,6min,30m,Square
+Still Creek EB @ Eastbrook,Union/Frances,,,,,right,2.4km,12min,65m,Square
+Eastbrook NB @ Still Creek,Gilmore Station,x,,x,x,left,1.4km,5min,0m,Circle
+Eastbrook NB @ Still Creek,"Rupert Stn, Superstore",,x,x,x,left,3.0km,14min,26m,Circle
+Eastbrook NB @ Still Creek,Downtown Vancouver,,,,,left,10.3km,43min,68m,Circle
+Eastbrook NB @ Still Creek,Holdom Station,x,,x,x,right,2.2km,7min,6m,Circle
+Eastbrook NB @ Still Creek,Lougheed,x,x,x,x,right,8.4km,29min,43m,Square
+Eastbrook NB @ Still Creek,New West,,,,,right,9.5km,40min,123m,Square
+Willingdon offramp at Stillcreek,Gilmore Station,x,,x,x,left,1.0km,4min,0m,Circle
+Willingdon offramp at Stillcreek,"Rupert Stn, Superstore",,x,x,x,left,2.6km,13min,26m,Circle
+Willingdon offramp at Stillcreek,Downtown Vancouver,,,,,left,9.9km,42min,68m,Circle
+Willingdon offramp at Stillcreek,Holdom Station,x,,x,x,right,2.4km,8min,8m,Circle
+Willingdon offramp at Stillcreek,Lougheed,x,x,x,x,right,8.8km,31min,45m,Square
+Willingdon offramp at Stillcreek,New West,,,,,right,9.9km,41min,125m,Square
+Still Creek EB @ Douglas,Holdom Station,x,,x,x,left,0.9km,3min,6m,Circle
+Still Creek EB @ Douglas,Buy Low Foods,x,x,,,right,1.2km,6min,12m,Square
+Still Creek EB @ Douglas,BCIT,,,,,right,2.1km,9min,29m,Square
+Still Creek EB @ Douglas,Metrotown,x,x,x,x,right,4.6km,24min,125m,Square
+Still Creek EB @ Douglas,Lougheed,x,x,x,x,right,7.1km,26min,44m,Square
+Still Creek EB @ Douglas,New West,,,,,right,8.3km,36min,122m,Square
+Douglas SB @ CVG,BCIT,,,,,up,2.0km,8min,28m,Square
+Douglas SB @ CVG,Metrotown,x,x,x,x,up,4.6km,24min,125m,Square
+Douglas SB @ CVG,Lougheed,x,x,x,x,left,7.1km,25min,43m,Square
+Douglas SB @ CVG,"City Hall, Deer Lake",,,,x,left,3.4km,13min,16m,Circle
+Douglas SB @ CVG,New West,,,,,left,8.2km,36min,122m,Square
+Douglas NB @ Still Creek,Holdom Station,x,,x,x,up,0.9km,3min,6m,Circle
+Douglas NB @ Still Creek,Brentwood Mall,x,x,x,x,up,1.5km,7min,30m,Square
+Douglas NB @ Still Creek,Burnaby Heights,,,,,up,3.9km,16min,75m,Square
+Douglas NB @ Still Creek,Gilmore Station,x,,x,x,left,2.7km,9min,3m,Circle
+Douglas NB @ Still Creek,"Rupert Stn, Superstore",,x,x,x,left,4.3km,18min,27m,Circle
+Douglas NB @ Still Creek,Downtown Vancouver,,,,,left,11.5km,47min,70m,Circle
+CVG WB @ Douglas,BCIT,,,,,left,2.0km,8min,28m,Square
+CVG WB @ Douglas,Metrotown,x,x,x,x,left,4.6km,24min,125m,Square
+CVG WB @ Douglas,Holdom Station,x,,x,x,right,0.9m,3min,6m,Circle
+CVG WB @ Douglas,Brentwood Mall,,,,,right,1.5km,7min,30m,Square
+CVG WB @ Douglas,Union/Frances,,,,,right,3.1km,13min,66m,Square
+Westminster NB @ Still Creek,Downtown Vancouver,,,,,left,10.9km,45min,70m,Circle
+Westminster NB @ Still Creek,Holdom Station,x,,x,x,right,1.5km,5min,5m,Circle
+Westminster NB @ Still Creek,Lougheed,x,x,x,x,right,7.8km,28min,44m,Square
+Westminster NB @ Still Creek,New West,,,,,right,8.9km,38min,122m,Square
+Douglas NB @ Goring,Brentwood Mall,x,x,x,x,up,1.2km,6min,26m,Square
+Douglas NB @ Goring,Burnaby Heights,,,,,up,3.5km,15min,71m,Square
+Douglas NB @ Goring,North Vancouver,,,,,up,7.1km,21min,79m,Square
+Douglas NB @ Goring,Holdom Station,x,,x,x,right,0.5km,2min,0m,Circle
+Douglas NB @ Goring,Buy Low Foods,x,x,,,right,1.0km,5min,8m,Square
+Douglas NB @ Goring,Kensington Square,x,x,,x,right,3.0km,17min,3km,Square
+Goring EB @ Holdom,Holdom Station,x,,x,x,left,0.1km,1min,0m,Circle
+Goring EB @ Holdom,Buy Low Foods,x,x,,,left,0.5km,3min,8m,Square
+Goring EB @ Holdom,Kensington Square,x,x,,x,left,2.6km,16min,91m,Square
+Goring EB @ Holdom,Lougheed,,,,,left,6.5km,22min,37m,Square
+Goring EB @ Holdom,SFU,,,,,left,7.4km,49min,312m,Diamond
