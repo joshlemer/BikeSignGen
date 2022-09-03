@@ -22,9 +22,9 @@
         height: 20%;
         max-height: 20%;
         flex: 1 1 auto;
-        font-size: 1in;
 
         display: flex;
+        flex-direction: column;
       }
       /* svg.washroom {
         width: 18.653mm;
@@ -42,15 +42,57 @@
         width: 10.014mm;
         height: 16.022mm;
       } */
+      .amenities {
+        display: inline-flex;
+        writing-mode: vertical-lr;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        /* max-height: 66%; */
+        height: 100%;
+      }
       svg.amenity-icon {
         /* margin: 10px; */
-        width: 18.653mm;
+        width: 20mm;
         /* height: 17.209mm; */
         height: 50%;
         padding-left: 10px;
         padding-right: 10px;
+        writing-mode: horizontal-tb;
         /* padding-top: 10px; */
-    }
+      }
+      svg.arrow {
+        padding: 10px;
+        width: 550px;
+      }
+      text.dest-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .dest-top {
+        height: 75%;
+        max-height: 80%;
+        width: 100%;
+        display: flex;
+        font-size: 1.1in;
+      }
+      .dest-bottom {
+        max-height: 25%;
+        max-width: 100%;
+        padding: 10px;
+        font-size: 0.6in;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      .elevation-icon {
+        width:60px;
+        height:40px;
+      }
+      .bike-icon {
+        width:70px;
+        height:40px;
+      }
     </style>
   </head>
   <body>
@@ -134,6 +176,268 @@
             />
           </g>
         </symbol>
+        <symbol
+          id="arrow_right"
+          viewBox="0 0 46.059811 38.005089"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"
+        >
+          <defs id="defs1115" />
+          <g id="layer1" transform="translate(-4.18523,-46.865981)">
+            <path
+              style="
+                fill: #ffffff;
+                fill-opacity: 1;
+                stroke: none;
+                stroke-width: 0.19043px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+              "
+              d="m 31.24275,84.87107 -4.81259,-4.8126 9.43475,-9.435249 H 4.18523 v -9.50988 h 31.67968 l -9.43429,-9.434778 h -9.3e-4 l 4.7e-4,-4.61e-4 4.81212,-4.812121 4.8126,4.812582 9.43522,9.434778 4.75494,4.75542 -4.75494,4.75446 -9.43475,9.435249 z"
+            />
+          </g>
+        </symbol>
+        <symbol
+          id="arrow_up"
+          viewBox="0 0 38.005089 46.059811"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"
+        >
+          <defs id="defs1115" />
+          <g id="layer1" transform="translate(78.47272,-91.212019)">
+            <path
+              id="Destination0.Direction.Up"
+              style="
+                fill: #ffffff;
+                fill-opacity: 1;
+                stroke: none;
+                stroke-width: 0.19043px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+              "
+              d="m -40.46763,110.2143 -4.8126,4.81259 -9.43525,-9.43475 v 31.67969 h -9.50988 v -31.67969 l -9.43478,9.43429 v 9.3e-4 l -4.6e-4,-4.7e-4 -4.81212,-4.81212 4.81258,-4.8126 9.43478,-9.435221 4.75542,-4.75493 4.75446,4.75493 9.43525,9.434751 z"
+            />
+          </g>
+        </symbol>
+        <symbol
+          id="arrow_left"
+          viewBox="0 0 46.059811 38.005089"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"
+        >
+          <defs id="defs1115" />
+          <g id="layer1" transform="translate(-7.1872,-47.584552)">
+            <path
+              id="Destination0.Direction.Left"
+              style="
+                fill: #ffffff;
+                fill-opacity: 1;
+                stroke: none;
+                stroke-width: 0.19043px;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-opacity: 1;
+              "
+              d="m 26.18948,47.584552 4.81259,4.812601 -9.43475,9.435249 h 31.67969 v 9.509879 H 21.56732 l 9.43429,9.434779 h 9.3e-4 l -4.7e-4,4.61e-4 -4.81212,4.81212 -4.8126,-4.812581 -9.43522,-9.434779 -4.75493,-4.75542 4.75493,-4.754459 9.43475,-9.435249 z"
+            />
+          </g>
+        </symbol>
+        <symbol
+          viewBox="0 0 19.645241 11.62852"
+          version="1.1"
+          id="bike_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"
+        >
+          <defs id="defs1115" />
+          <g id="layer1" transform="translate(173.09609,-189.13084)">
+            <path
+              d="m -160.23716,197.11344 2.57162,-0.42867 -1.62073,-2.15032 c -0.84011,0.74817 -0.94461,1.64626 -0.95089,2.57899 z m -0.70743,0.15733 c -0.004,-0.0932 -0.0188,-0.24306 -0.0188,-0.34799 0,-1.06405 0.337,-2.09808 1.25166,-2.95744 l -0.95257,-1.16494 -1.47441,4.59414 z m -5.65912,-4.5723 0.0817,-0.25566 5.25149,-0.007 -1.397,4.32549 -0.0603,-0.45124 h 0.16073 l -0.0202,-0.28715 h -0.70287 l 0.0201,0.26666 h 0.18076 l 0.0401,0.4923 c 0,0 -3.53455,-4.0629 -3.55464,-4.08339 z m -2.32583,4.15517 c 0.70522,-0.57214 1.25415,-1.11742 1.65,-2.20865 0.62479,0.5789 0.98126,1.41621 0.98126,2.27779 0,1.71099 -1.36636,3.10654 -3.0416,3.10654 -1.6752,0 -3.04151,-1.39555 -3.04151,-3.10654 0,-1.71104 1.36631,-3.10656 3.04151,-3.10656 0.53465,0 1.0812,0.15772 1.5219,0.42343 -0.29832,0.96276 -0.58848,1.45932 -1.50633,2.21399 -0.22282,0.01 -0.39222,0.19231 -0.39222,0.41023 0,0.226 0.18041,0.41026 0.40161,0.41026 0.22124,0 0.38538,-0.18426 0.38538,-0.42049 z m 8.80013,0.91987 c 0.34399,1.30934 1.56778,2.2559 2.92225,2.2559 1.67523,0 3.04163,-1.39555 3.04163,-3.10663 0,-1.71104 -1.3664,-3.10665 -3.04163,-3.10665 -0.53468,0 -1.1533,0.12893 -1.60463,0.39877 l 1.65088,2.23874 c 0.20191,0.003 0.37771,0.18751 0.37771,0.41023 0,0.226 -0.1805,0.41026 -0.40167,0.41026 -0.0612,0 -0.12552,-0.016 -0.17982,-0.0422 z m -7.47142,-4.25293 1.07744,-3.03592 -0.34141,-0.59492 0.68282,-0.7589 h 1.46602 l 0.0201,0.43075 h -1.28531 l -0.26109,0.28715 0.30123,0.55382 -0.37879,1.37131 h 5.26132 l 0.0804,-0.2508 c -0.42284,-0.0562 -1.15215,-0.32231 -1.32633,-0.47679 -0.17419,-0.15457 -0.0217,-0.29669 0.17674,-0.30335 1.03844,-0.0451 2.58119,-0.13391 2.87429,-0.1352 0.29301,-0.001 0.32305,0.14917 0.12687,0.36836 -0.19618,0.21915 -0.36767,0.41649 -1.11092,0.53411 l -0.20079,0.55382 1.24495,1.57534 c 0.58684,-0.36388 1.29656,-0.55319 1.98616,-0.55319 2.06889,0 3.75628,1.72347 3.75628,3.83661 0,2.11312 -1.68739,3.83656 -3.75628,3.83656 -1.70205,0 -3.19869,-1.19889 -3.63851,-2.85592 l -1.14402,0.20998 c -0.049,0.13774 -0.16311,0.24339 -0.29947,0.32606 l 0.20405,0.98846 h 0.26106 l 0.0201,0.26667 -0.82338,0.041 v -0.28715 h 0.20085 l -0.24872,-0.9879 c -0.37013,-0.0618 -0.56405,-0.38542 -0.45383,-0.70659 l -3.73716,-4.31703 -0.16731,0.4632 c 0.90701,0.72969 1.44992,1.85371 1.44992,3.02269 0,2.11312 -1.6874,3.83655 -3.75628,3.83655 -2.06886,0 -3.75626,-1.72343 -3.75626,-3.83655 0,-2.11314 1.6874,-3.83661 3.75626,-3.83661 0.60161,0 1.21787,0.14995 1.73905,0.4344 z"
+              id="Destination0.Icon.TravelTime"
+              style="
+                overflow: visible;
+                fill: #ffffff;
+                fill-opacity: 1;
+                fill-rule: evenodd;
+                stroke-width: 0.10772;
+              "
+            />
+          </g>
+        </symbol>
+        <symbol
+
+          viewBox="0 0 22.313002 14.908867"
+          version="1.1"
+          id="elevation_icon"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"
+        >
+          <defs id="defs1115" />
+          <g id="layer1" transform="translate(102.60718,-144.20629)">
+            <g
+              id="Destination2.Icon.ElevationGain"
+              transform="matrix(0.9376711,0,0,0.9376711,-84.14197,-262.41183)"
+            >
+              <path
+                id="path7901"
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.00180901;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                d="m -3.8588947,433.713 -3.16675,3.16674 c 0,0 0.80301,-0.80301 -4.9e-4,4.8e-4 -0.6768,0.67679 -3.2702903,2.01888 -3.9759903,2.72458 -0.93703,0.93704 -1.6922,2.94364 -2.35701,3.60845 -0.50817,0.50816 -2.99763,1.54377 -3.70044,2.2466 -0.64437,0.64438 -2.63305,4.08689 -2.63305,4.08689 h 3.16675 12.6669803 v -3.16675 z"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0427564;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7903"
+                width="1.1750689"
+                height="15.826711"
+                x="0.7037704"
+                y="433.64685"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0207751;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7905"
+                width="0.78064656"
+                height="5.6245236"
+                x="433.65552"
+                y="-4.1035666"
+                transform="rotate(90)"
+              />
+              <path
+                id="path7907"
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0300552px;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-opacity: 1;
+                "
+                d="m -15.857709,435.04419 -1.074201,1.07418 h 2.105924 l -3.535464,3.53548 1.061312,1.06131 3.535485,-3.53546 -1.4e-5,2.10592 1.074147,-1.0742 -7e-6,-2.10589 v -1.06134 h -1.061271 z"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0207751;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7909"
+                width="0.78064656"
+                height="5.6245236"
+                x="448.6929"
+                y="-4.1035666"
+                transform="rotate(90)"
+              />
+              <path
+                id="path7911"
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.00180901;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                d="m -3.8588947,433.713 -3.16675,3.16674 c 0,0 0.80301,-0.80301 -4.9e-4,4.8e-4 -0.6768,0.67679 -3.2702903,2.01888 -3.9759903,2.72458 -0.93703,0.93704 -1.6922,2.94364 -2.35701,3.60845 -0.50817,0.50816 -2.99763,1.54377 -3.70044,2.2466 -0.64437,0.64438 -2.63305,4.08689 -2.63305,4.08689 h 3.16675 12.6669803 v -3.16675 z"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0427564;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7913"
+                width="1.1750689"
+                height="15.826711"
+                x="0.7037704"
+                y="433.64685"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0207751;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7915"
+                width="0.78064656"
+                height="5.6245236"
+                x="433.65552"
+                y="-4.1035666"
+                transform="rotate(90)"
+              />
+              <path
+                id="path7917"
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0300552px;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-opacity: 1;
+                "
+                d="m -15.857709,435.04419 -1.074201,1.07418 h 2.105924 l -3.535464,3.53548 1.061312,1.06131 3.535485,-3.53546 -1.4e-5,2.10592 1.074147,-1.0742 -7e-6,-2.10589 v -1.06134 h -1.061271 z"
+              />
+              <rect
+                style="
+                  fill: #ffffff;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 0.0207751;
+                  stroke-linecap: square;
+                  stroke-linejoin: round;
+                  paint-order: fill markers stroke;
+                "
+                id="rect7919"
+                width="0.78064656"
+                height="5.6245236"
+                x="448.6929"
+                y="-4.1035666"
+                transform="rotate(90)"
+              />
+            </g>
+          </g>
+        </symbol>
       </defs>
     </svg>
     <div
@@ -158,30 +462,62 @@
           <text> City hall blah blah blah blah blah blah blah </text>
         </div>
         <div class="dest"></div>
-        <div class="dest">a</div>
-        <div class="dest">b</div>
         <div class="dest">
-          <div class="amenities" 
-          style="
-          display:flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          max-height: 66%;">
-                                            
+          <div class="amenities"></div>
+          <text>Burnaby City Hall</text>
+        </div>
+        <div class="dest">
+          <div class="amenities">
             <svg class="amenity-icon washroom">
               <use href="#washroom"></use>
             </svg>
-            <svg class="amenity-icon dining">
-              <use href="#dining"></use>
-            </svg>
-            <svg class="amenity-icon skytrain">
-              <use href="#skytrain"></use>
-            </svg>
-            <svg class="amenity-icon grocery">
-              <use href="#grocery"></use>
-            </svg>
           </div>
           <text>Burnaby City Hall</text>
+        </div>
+
+        <div class="dest">
+          <div class="dest-top">
+            <div class="amenities">
+              <svg class="amenity-icon washroom">
+                <use href="#washroom"></use>
+              </svg>
+              <svg class="amenity-icon dining">
+                <use href="#dining"></use>
+              </svg>
+              <svg class="amenity-icon skytrain">
+                <use href="#skytrain"></use>
+              </svg>
+              <svg class="amenity-icon grocery">
+                <use href="#grocery"></use>
+              </svg>
+            </div>
+            <text class="dest-name">Burnaby City Hall blah blah blah blah</text>
+            <svg class="arrow">
+              <!-- <use href="#arrow_right"></use> -->
+              <use href="#arrow_left"></use>
+            </svg>
+          </div>
+          <div class="dest-bottom">
+            <div class="dest-section section-distance">
+
+              <text>2.7km</text>
+            </div>
+            <div class="dest-section section-traveltime">
+                <svg class="bike-icon">
+                    <use href="#bike_icon"></use>
+                  </svg>
+              <text>10min</text>
+            </div>
+            <div class="dest-section section-elevation-gain">
+                <svg class="elevation-icon">
+                    <use href="#elevation_icon"></use>
+                  </svg>
+              <text>25m</text>
+            </div>
+            <!-- <div class="dest-section section-distance">
+                
+            </div> -->
+          </div>
         </div>
       </div>
     </div>
