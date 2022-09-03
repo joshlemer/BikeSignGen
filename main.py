@@ -4,7 +4,12 @@ import xml.etree.ElementTree as ET
 import csv
 import itertools
 import yaml
+from jinja2 import Environment, PackageLoader, select_autoescape
 
+# import pdfkit
+# from weasyprint import HTML
+from pyppeteer import launch
+import asyncio
 destinations = [{
     'name': "Josh's",
     'distance': 7.6,
@@ -322,9 +327,34 @@ def main():
             
             root.write(os.path.join(out_dir, f"{location.replace(' ', '_')}_{group_num+1}of{len(destination_groups)}.svg"))
         
+async def main3():
+    env = Environment(
+        loader=PackageLoader('main'),
+        autoescape=select_autoescape,
+    )
+    template = env.get_template('test2.html')
+    html_str = template.render(foo='bar!!!'
+    )
+    # pdfkit.from_string(html_str,'out.pdf', options={
+    #     'page-size': 'Tabloid',
+    # })
+    # main()
+    browser = await launch({'headless': True})
+    page = await browser.newPage()
+
+    await page.setContent(html_str)
+    await page.pdf({
+        'path': 'out2.pdf',
+        'printBackground': True,
+        'format': 'Tabloid',
+    })
+    # await page.create
+
+
 
 if __name__ == '__main__':
-    main()
+     asyncio.get_event_loop().run_until_complete(main3())
+
 
 
 
