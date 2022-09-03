@@ -333,8 +333,10 @@ async def main3():
         autoescape=select_autoescape,
     )
     template = env.get_template('test2.html')
-    html_str = template.render(foo='bar!!!'
-    )
+    html_str = template.render({
+        'foo': 'bar!!',
+        'destinations': [1,2,3,4,5],
+    })
     # pdfkit.from_string(html_str,'out.pdf', options={
     #     'page-size': 'Tabloid',
     # })

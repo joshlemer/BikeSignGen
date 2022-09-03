@@ -3,78 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <style>
       body {
-        /* max-width: 11in;
-             max-height: 17in;
-             color: blue;
-             background-color: green; */
         margin: 0px;
         font-family: sans-serif;
       }
+      .sign {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        height: 100%;
+      }
       .dest {
         color: white;
-        /* flex-grow: 1;   */
         width: 100%;
-        border-top: 2px solid white;
+        border: 2px solid white;
         height: 20%;
         max-height: 20%;
-        flex: 1 1 auto;
+        flex: 0 0 auto;
 
         display: flex;
         flex-direction: column;
       }
-      /* svg.washroom {
-        width: 18.653mm;
-        height: 17.209mm;
-      }
-      svg.grocery {
-        width: 16.276mm;
-        height: 14.468mm;
-      }
-      svg.skytrain {
-        width: 16.752mm;
-        height: 16.752mm;
-      }
-      svg.dining {
-        width: 10.014mm;
-        height: 16.022mm;
-      } */
+
       .amenities {
         display: inline-flex;
         writing-mode: vertical-lr;
         flex-wrap: wrap;
         align-content: flex-start;
-        /* max-height: 66%; */
         height: 100%;
       }
       svg.amenity-icon {
-        /* margin: 10px; */
         width: 20mm;
-        /* height: 17.209mm; */
         height: 50%;
         padding-left: 10px;
         padding-right: 10px;
         writing-mode: horizontal-tb;
-        /* padding-top: 10px; */
       }
-      /* svg.amenity-icon.dining {
-        height: 16mm;
-      } */
+
       svg.arrow {
         padding: 10px;
-        /* width: 350px;
-        max-width: 350px; */
-
         flex-basis: 20%;
         flex-grow: 0;
         flex-shrink: 0;
       }
       text.dest-name {
         overflow: hidden;
-        /* text-overflow: ellipsis; */
       }
       .dest-top {
         height: 75%;
@@ -507,7 +484,6 @@
             </div>
             <text class="dest-name">Brentwood Mall</text>
             <svg class="arrow">
-              <!-- <use href="#arrow_right"></use> -->
               <use href="#arrow_up"></use>
             </svg>
           </div>
@@ -527,9 +503,6 @@
               </svg>
               <text>25m</text>
             </div>
-            <!-- <div class="dest-section section-distance">
-                
-            </div> -->
           </div>
         </div>
       </div>
@@ -542,33 +515,8 @@
         border-radius: 20px;
       "
     >
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: stretch;
-          justify-content: space-around;
-          height: 100%;
-        "
-      >
-        <div class="dest">
-          <text> Hello {{ foo }} </text>
-        </div>
-        <div class="dest"></div>
-        <div class="dest">
-          <div class="amenities"></div>
-          <text>Burnaby City Hall</text>
-        </div>
-        <div class="dest">
-          <div class="amenities">
-            <svg class="amenity-icon washroom">
-              <use href="#washroom"></use>
-            </svg>
-          </div>
-          <text>Burnaby City Hall</text>
-        </div>
-
+      <div class="sign" style="">
+        {% for destination in [1,2,3] %}
         <div class="dest">
           <div class="dest-top">
             <div class="amenities">
@@ -587,7 +535,6 @@
             </div>
             <text class="dest-name">Brentwood Mall</text>
             <svg class="arrow">
-              <!-- <use href="#arrow_right"></use> -->
               <use href="#arrow_up"></use>
             </svg>
           </div>
@@ -607,11 +554,9 @@
               </svg>
               <text>25m</text>
             </div>
-            <!-- <div class="dest-section section-distance">
-                
-            </div> -->
           </div>
         </div>
+        {% endfor %}
       </div>
     </div>
   </body>
