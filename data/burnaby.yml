@@ -1,18 +1,41 @@
 destinations:
   cvg:
     name: "Central Valley Greenway"
-    amenities:
-      - dining
-      - grocieries
-      - skytrain
+  bcit:
+    name: "BCIT"
+    latitude: 49.251691
+    longitude: -123.001931
+    amenities: []
+  brentwoodMall:
+    name: "Brentwood Mall"
+    latitude: 49.2677142
+    longitude: -123.0007117
+    amenities: [dining, skytrain, washroom, groceries]
+  burnabyHeights:
+    name: "Burnaby Heights"
+    latitude: 49.2810476
+    longitude: -123.014263
+    amenities: []
+  gilmoreStation:
+    name: "Gilmore Station"
+    latitude: 49.2649269
+    longitude: -123.0136247
+    amenities: [dining, skytrain, washroom]
   metrotown:
     name: "Metrotown"
-    amenities:
-      - dining
-      - groceries
-      - skytrain
-      - washroom
-
+    latitude: 49.227382
+    longitude: -122.998239
+    amenities: [dining, skytrain, washroom, groceries]
+  sfu:
+    name: "Simon Fraser U"
+    latitude: 49.278099
+    longitude: -122.919829
+    amenities: []
+  lougheedMall:
+    name: "Lougheed Mall"
+    latitude: 49.249789
+    longitude: -122.896613
+    amenities: [dining, skytrain, washroom, groceries]
 signLocations:
   - name: "Holdom Southbound at Goring"
     destinations:
@@ -21,4 +44,24 @@ signLocations:
         distance: 0.7km
         travelTime: 2min
         elevationGain: 2m
-        comfort: circle
+      metrotown:
+        direction: right
+  - name: "Central Valley Greenway Eastbound at Gilmore"
+    latitude: 49.262319
+    longitude: -123.014478
+    destinations:
+      gilmoreStation:
+        direction: left
+      brentwoodMall:
+        direction: left
+      burnabyHeights:
+        direction: left
+      sfu:
+        direction: left
+      lougheedMall:
+        direction: left 
+      bcit:
+        direction: right
+      metrotown:
+        direction: right
+

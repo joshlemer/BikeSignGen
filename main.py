@@ -1,4 +1,5 @@
 import os
+from pprint import pprint
 import re
 from time import sleep
 import xml.etree.ElementTree as ET
@@ -6,6 +7,7 @@ import csv
 import itertools
 import yaml
 from jinja2 import Environment, PackageLoader, select_autoescape
+import brouter
 
 # import pdfkit
 # from weasyprint import HTML
@@ -211,21 +213,107 @@ def compare_destination(destination):
     return (direction_to_num[direction], compute_distance(destination))
 
 
+def enriched_sign_locations(input):
+    
+    result = []
+    for signLocation in input['signLocations']:
+        enriched_location = {k:signLocation[k] for k in ('name', 'latitude', 'longitude',)
+          if k in signLocation}
+        dests = []
+        for dest_id, dest in signLocation.get('destinations',{}).items():
+            enriched_dest = {k:dest[k] for k in ('direction','travel_time','elevation_gain','distance')
+                                        if k in dest}
+            dests.append(enriched_dest)
+            if dest_id in input['destinations']:
+                dest_info = input['destinations'][dest_id]
+                for k in ('name', 'latitude', 'longitude', 'amenities'):
+                    if k in dest:
+                        enriched_dest[k] = dest[k]
+                    elif k in dest_info:
+                        enriched_dest[k] = dest_info[k]
+            
+            if all(
+                k in enriched_dest for k in ('latitude', 'longitude')
+                ) and all(
+                    k in enriched_location for k in ('latitude', 'longitude')) and any(
+                        k not in enriched_dest for k in ('distance', 'travelTime', 'elevationGain')
+                    ):
+                trip_info = brouter.get_trip_info(
+                    start=(enriched_location['latitude'], enriched_location['longitude']),
+                    end = (enriched_dest['latitude'], enriched_dest['longitude']),
+                )
+                for k in ('distance', 'travelTime', 'elevationGain'):
+                    if k not in enriched_dest:
+                        enriched_dest[k] = trip_info[k]
+        
+        enriched_location['destinations'] = dests
+
+        result.append(enriched_location)
+    return result
 
 
-def main2():
-    out_dir = os.path.join('out','test2')
+
+def test_enriched_sign_locations():
+    with open('data/burnaby.yml', 'r') as f:
+        y = yaml.full_load(f)
+    
+    pprint(enriched_sign_locations(y))
+
+
+async def main2():
+    out_dir = os.path.join('out','test4')
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
 
     with open('data/burnaby.yml', 'r') as f:
         y = yaml.full_load(f)
-        print(y['destinations'])
+    
+    sign_locations = enriched_sign_locations(y)
+
+    # sort each sign location's destinations by direction then distance
+
+    for sign_location in sign_locations:
+        destinations = sorted(
+            sign_location.get('destinations',[]),
+            key=compare_destination)
+        
+        signs = [[]]
+        
+        for d in destinations:
+            if len(signs[-1]) >= 6:
+                signs.append([])
+            signs[-1].append(d)
+
+        sign_location['signs'] = signs
+          
+    
+
+    pprint(sign_locations)
     # csv_data = parse_csv('data/burnaby.yml')
     # locations = [(location, sorted(list(destinations), key=compare_destination)) 
     #                 for location, destinations in itertools.groupby(csv_data, lambda x: x['location'])]
 
-    template_path = 'templates/ledger_portrait_6.svg'
+    env = Environment(
+        loader=PackageLoader('main'),
+        autoescape=select_autoescape,
+    )
+    template = env.get_template('test2.html')
+    html_str = template.render({ 'signLocations': sign_locations })
+    browser = await launch({'headless': False})
+    page = await browser.newPage()
+
+    await page.setContent(html_str)
+    while not page.isClosed():
+        sleep(1)
+
+    await page.pdf({
+        'path': 'out2.pdf',
+        'printBackground': True,
+        'format': 'Tabloid',
+    })
+
+    
+
 
 def main():
     out_dir = os.path.join('out','test3')
@@ -238,7 +326,6 @@ def main():
     
     locations = [(location, sorted(list(destinations), key=compare_destination)) for location, destinations in itertools.groupby(flattened_yaml, lambda x: x['location'])]
 
-    # template_path = 'templates/ledger_portrait_6.svg'
     template_path = 'ledger_portrait_6.svg'
 
     for location, destinations in locations:
@@ -297,23 +384,26 @@ async def main3():
     #     'page-size': 'Tabloid',
     # })
     # main()
-    browser = await launch({'headless': False})
+
+
+    
+    browser = await launch({'headless': True})
     page = await browser.newPage()
 
     await page.setContent(html_str)
-    # await page.pdf({
-    #     'path': 'out2.pdf',
-    #     'printBackground': True,
-    #     'format': 'Tabloid',
-    # })
-    while not page.isClosed():
-        sleep(10)
+    await page.pdf({
+        'path': 'out2.pdf',
+        'printBackground': True,
+        'format': 'Tabloid',
+    })
+
     # await page.create
 
 
 
 if __name__ == '__main__':
-     asyncio.get_event_loop().run_until_complete(main3())
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main2())
 
 
 
