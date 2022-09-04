@@ -63,9 +63,9 @@
         max-height: 75%;
         width: 100%;
         display: flex;
-        font-size: 1.1in;
+        font-size: 1in;
 
-        line-height: 85%;
+        /* line-height: 85%; */
         font-size: 1in;
       }
       .dest-bottom {
@@ -441,6 +441,7 @@
       </defs>
     </svg>
     <div
+      class="page"
       style="
         width: 11in;
         height: 17in;
@@ -448,83 +449,7 @@
         border-radius: 20px;
       "
     >
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: stretch;
-          justify-content: space-around;
-          height: 100%;
-        "
-      >
-        <div class="dest">
-          <text> Hello {{ foo }} </text>
-        </div>
-        <div class="dest"></div>
-        <div class="dest">
-          <div class="amenities"></div>
-          <text>Burnaby City Hall</text>
-        </div>
-        <div class="dest">
-          <div class="amenities">
-            <svg class="amenity-icon washroom">
-              <use href="#washroom"></use>
-            </svg>
-          </div>
-          <text>Burnaby City Hall</text>
-        </div>
-
-        <div class="dest">
-          <div class="dest-top">
-            <div class="amenities">
-              <svg class="amenity-icon washroom">
-                <use href="#washroom"></use>
-              </svg>
-              <svg class="amenity-icon dining">
-                <use href="#dining"></use>
-              </svg>
-              <svg class="amenity-icon skytrain">
-                <use href="#skytrain"></use>
-              </svg>
-              <svg class="amenity-icon grocery">
-                <use href="#grocery"></use>
-              </svg>
-            </div>
-            <text class="dest-name">Brentwood Mall</text>
-            <svg class="arrow">
-              <use href="#arrow_up"></use>
-            </svg>
-          </div>
-          <div class="dest-bottom">
-            <div class="dest-section section-distance">
-              <text>2.7km</text>
-            </div>
-            <div class="dest-section section-traveltime">
-              <svg class="bike-icon">
-                <use href="#bike_icon"></use>
-              </svg>
-              <text>10min</text>
-            </div>
-            <div class="dest-section section-elevation-gain">
-              <svg class="elevation-icon">
-                <use href="#elevation_icon"></use>
-              </svg>
-              <text>25m</text>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      style="
-        width: 11in;
-        height: 17in;
-        background-color: #01735c;
-        border-radius: 20px;
-      "
-    >
-      <div class="sign" style="">
+      <div class="sign">
         {% for destination in destinations %}
         <div class="dest">
           <div class="dest-top">

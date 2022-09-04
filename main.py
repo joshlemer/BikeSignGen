@@ -191,75 +191,6 @@ def parse_csv(file_name):
     with open(file_name,newline='') as csvfile:
         return [parse_row(row) for row in csv.DictReader(csvfile)]
 
-# def parse_yaml(file_name):
-#     '''
-#     returns iterable of dicts like 
-#     {
-#         'name': "Tyler's",
-#         'distance': '7.7km',
-#         'travelTime': '8min',
-#         'elevationGain': '9m',
-#         'direction': 'Up',
-#         'icons': {'Skytrain'},
-#         'comfort': 'Circle',
-#     }
-#     '''
-
-#     def parse_row(row):
-
-#         def copy_if_not_empty(from_dict, from_field, to_dict, to_field):
-#             value = from_dict[from_field]
-#             if value:
-#                 to_dict[to_field] = value
-        
-#         result = {}
-
-#         for from_field, to_field in {
-#             'Sign Location Name':'location',
-#             'Destination Name': 'name', 
-#             'Distance': 'distance', 
-#             'Travel Time': 'travelTime', 
-#             'Elevation Gain': 'elevationGain', 
-#             'Comfort': 'comfort',
-#             }.items():
-#             copy_if_not_empty(row, from_field, result, to_field)
-        
-#         if 'Direction' in row:
-#             if direction := row['Direction'].strip():
-#                 result['direction'] = f'{direction[0].upper()}{direction[1:]}'
-            
-            
-        
-#         icons = set()
-#         for field, icon in {
-#             'Has Dining': 'Dining',
-#             'Has Grocery': 'Grocery',
-#             'Has Skytrain': 'Skytrain',
-#             'Has Washroom': 'Washroom',
-#             }.items():
-#             if field in row and row[field]:
-#                 icons.add(icon)
-
-#         result['icons'] = icons
-#         return result 
-
-#     with open(file_name,newline='') as csvfile:
-#         return [parse_row(row) for row in csv.DictReader(csvfile)]
-
-
-# def main():
-#     template_path = 'templates/trifold_landscape.svg'
-
-#     root = ET.parse(template_path)
-
-#     apply_destination(root, destination0, 0)
-#     apply_destination(root, destination1, 1)
-#     apply_destination(root, destination2, 2)
-
-#     root.write('out/testing.svg')
-
-# main()
-
 max_destinations_per_sign = 6
 
 distance_re = re.compile('(\d+(\.\d+)?)')
@@ -335,7 +266,6 @@ async def main3():
     )
     template = env.get_template('test2.html')
     html_str = template.render({
-        'foo': 'bar!!',
         'destinations': [
             {   
                 'name': 'Blah',
@@ -355,7 +285,7 @@ async def main3():
             },
                         {   
                 'name': 'Blah',
-                'amenities': {},
+                'amenities': {'skytrain'},
                 'direction': 'up',
                 'distance': '2.7km',
                 'traveltime': '10min',
