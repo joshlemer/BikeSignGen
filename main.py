@@ -1,5 +1,6 @@
 import os
 import re
+from time import sleep
 import xml.etree.ElementTree as ET
 import csv
 import itertools
@@ -335,21 +336,48 @@ async def main3():
     template = env.get_template('test2.html')
     html_str = template.render({
         'foo': 'bar!!',
-        'destinations': [1,2,3,4,5],
+        'destinations': [
+            {   
+                'name': 'Blah',
+                'amenities': {'dining', 'grocery', 'skytrain', 'washroom'},
+                'direction': 'up',
+                'distance': '2.7km',
+                'traveltime': '10min',
+                'elevation_gain': '25m',
+            },
+            {   
+                'name': 'Blah',
+                'amenities': {'dining', 'grocery', 'skytrain'},
+                'direction': 'left',
+                'distance': '2.7km',
+                'traveltime': '10min',
+                'elevation_gain': '25m',
+            },
+                        {   
+                'name': 'Blah',
+                'amenities': {},
+                'direction': 'up',
+                'distance': '2.7km',
+                'traveltime': '10min',
+                'elevation_gain': '25m',
+            },
+        ],
     })
     # pdfkit.from_string(html_str,'out.pdf', options={
     #     'page-size': 'Tabloid',
     # })
     # main()
-    browser = await launch({'headless': True})
+    browser = await launch({'headless': False})
     page = await browser.newPage()
 
     await page.setContent(html_str)
-    await page.pdf({
-        'path': 'out2.pdf',
-        'printBackground': True,
-        'format': 'Tabloid',
-    })
+    # await page.pdf({
+    #     'path': 'out2.pdf',
+    #     'printBackground': True,
+    #     'format': 'Tabloid',
+    # })
+    while not page.isClosed():
+        sleep(10)
     # await page.create
 
 

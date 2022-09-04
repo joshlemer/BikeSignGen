@@ -27,6 +27,10 @@
 
         display: flex;
         flex-direction: column;
+        /* to ensure that the border does not add to size */
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
       }
 
       .amenities {
@@ -49,21 +53,26 @@
         flex-basis: 20%;
         flex-grow: 0;
         flex-shrink: 0;
+        margin-left: auto;
       }
       text.dest-name {
         overflow: hidden;
       }
       .dest-top {
         height: 75%;
-        max-height: 80%;
+        max-height: 75%;
         width: 100%;
         display: flex;
         font-size: 1.1in;
+
+        line-height: 85%;
+        font-size: 1in;
       }
       .dest-bottom {
+        margin-top: auto;
         max-height: 25%;
         max-width: 100%;
-        padding: 10px;
+        /* padding: 10px; */
         font-size: 0.6in;
         display: flex;
         flex-direction: row;
@@ -516,26 +525,20 @@
       "
     >
       <div class="sign" style="">
-        {% for destination in [1,2,3] %}
+        {% for destination in destinations %}
         <div class="dest">
           <div class="dest-top">
             <div class="amenities">
-              <svg class="amenity-icon washroom">
-                <use href="#washroom"></use>
+              {% for amenity in ['dining', 'grocery', 'skytrain', 'washroom'] %}
+              {% if amenity in destination['amenities'] %}
+              <svg class="amenity-icon {{amenity}}">
+                <use href="#{{amenity}}"></use>
               </svg>
-              <svg class="amenity-icon dining">
-                <use href="#dining"></use>
-              </svg>
-              <svg class="amenity-icon skytrain">
-                <use href="#skytrain"></use>
-              </svg>
-              <svg class="amenity-icon grocery">
-                <use href="#grocery"></use>
-              </svg>
+              {% endif %} {% endfor %}
             </div>
             <text class="dest-name">Brentwood Mall</text>
             <svg class="arrow">
-              <use href="#arrow_up"></use>
+              <use href="#arrow_{{destination['direction']}}"></use>
             </svg>
           </div>
           <div class="dest-bottom">
