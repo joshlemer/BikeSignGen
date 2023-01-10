@@ -212,13 +212,14 @@ def compare_destination(destination):
     direction = destination.get('direction', '')
     return (direction_to_num[direction], compute_distance(destination))
 
-
 def enriched_sign_locations(input):
     
     result = []
     for signLocation in input['signLocations']:
-        enriched_location = {k:signLocation[k] for k in ('name', 'latitude', 'longitude',)
-          if k in signLocation}
+
+        enriched_location = { k: signLocation[k] for k in ('name', 'latitude', 'longitude')
+                                                if k in signLocation }
+
         dests = []
         for dest_id, dest in signLocation.get('destinations',{}).items():
             enriched_dest = {k:dest[k] for k in ('direction','travel_time','elevation_gain','distance')
@@ -386,7 +387,7 @@ async def main3():
     # main()
 
 
-    
+
     browser = await launch({'headless': True})
     page = await browser.newPage()
 

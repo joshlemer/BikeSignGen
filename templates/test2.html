@@ -17,13 +17,13 @@
         justify-content: flex-start;
         height: 100%;
       }
-      .dest {
+      .dest,.info-header {
         color: white;
         width: 100%;
         /* border-top: 2px solid white; */
         border-bottom: 2px solid white;
-        height: 20%;
-        max-height: 20%;
+        height: 16.666%;
+        max-height: 16.666%;
         flex: 0 0 auto;
 
         display: flex;
@@ -54,8 +54,14 @@
         flex-basis: 20%;
         flex-grow: 0;
         flex-shrink: 0;
+      }
+      svg.arrow.arrow-right,
+      svg.arrow.arrow-up {
         margin-left: auto;
       }
+      svg.arrow.arrow-left {
+      }
+
       text.dest-name {
         overflow: hidden;
       }
@@ -66,7 +72,7 @@
         display: flex;
         font-size: 1in;
 
-        /* line-height: 85%; */
+        line-height: 100%;
         font-size: 1in;
       }
       .dest-bottom {
@@ -83,6 +89,9 @@
       .elevation-icon {
         width: 60px;
         height: 40px;
+      }
+      svg.amenity-icon.dining {
+        width: 60px;
       }
       .bike-icon {
         width: 70px;
@@ -180,74 +189,45 @@
         </symbol>
         <symbol
           id="arrow_right"
-          viewBox="0 0 46.059811 38.005089"
+          viewBox="0 0 448.04999 436.70001"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:svg="http://www.w3.org/2000/svg"
         >
-          <defs id="defs1115" />
-          <g id="layer1" transform="translate(-4.18523,-46.865981)">
-            <path
-              style="
-                fill: #ffffff;
-                fill-opacity: 1;
-                stroke: none;
-                stroke-width: 0.19043px;
-                stroke-linecap: butt;
-                stroke-linejoin: miter;
-                stroke-opacity: 1;
-              "
-              d="m 31.24275,84.87107 -4.81259,-4.8126 9.43475,-9.435249 H 4.18523 v -9.50988 h 31.67968 l -9.43429,-9.434778 h -9.3e-4 l 4.7e-4,-4.61e-4 4.81212,-4.812121 4.8126,4.812582 9.43522,9.434778 4.75494,4.75542 -4.75494,4.75446 -9.43475,9.435249 z"
-            />
-          </g>
+          <defs id="defs2027" />
+          <path
+            d="m 190.5,29.25 22.2,-22.2 c 9.4,-9.4 24.6,-9.4 33.9,0 L 441,201.35 c 9.4,9.4 9.4,24.6 0,33.9 l -194.4,194.4 c -9.4,9.4 -24.6,9.4 -33.9,0 l -22.2,-22.2 c -9.5,-9.5 -9.3,-25 0.4,-34.3 L 311.4,258.35 H 24 c -13.3,0 -24,-10.7 -24,-24 v -32 c 0,-13.3 10.7,-24 24,-24 H 311.4 L 190.9,63.55 c -9.8,-9.3 -10,-24.8 -0.4,-34.3 z"
+            id="path2021"
+            style="fill: #ffffff"
+          />
         </symbol>
         <symbol
           id="arrow_up"
-          viewBox="0 0 38.005089 46.059811"
+          viewBox="0 0 436.70001 448.04999"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:svg="http://www.w3.org/2000/svg"
         >
-          <defs id="defs1115" />
-          <g id="layer1" transform="translate(78.47272,-91.212019)">
-            <path
-              id="Destination0.Direction.Up"
-              style="
-                fill: #ffffff;
-                fill-opacity: 1;
-                stroke: none;
-                stroke-width: 0.19043px;
-                stroke-linecap: butt;
-                stroke-linejoin: miter;
-                stroke-opacity: 1;
-              "
-              d="m -40.46763,110.2143 -4.8126,4.81259 -9.43525,-9.43475 v 31.67969 h -9.50988 v -31.67969 l -9.43478,9.43429 v 9.3e-4 l -4.6e-4,-4.7e-4 -4.81212,-4.81212 4.81258,-4.8126 9.43478,-9.435221 4.75542,-4.75493 4.75446,4.75493 9.43525,9.434751 z"
-            />
-          </g>
+          <defs id="defs2027" />
+          <path
+            d="m 29.25,257.55 -22.2,-22.2 c -9.4,-9.4 -9.4,-24.6 0,-33.9 L 201.35,7.05 c 9.4,-9.4 24.6,-9.4 33.9,0 l 194.4,194.4 c 9.4,9.4 9.4,24.6 0,33.9 l -22.2,22.2 c -9.5,9.5 -25,9.3 -34.3,-0.4 l -114.8,-120.5 v 287.4 c 0,13.3 -10.7,24 -24,24 h -32 c -13.3,0 -24,-10.7 -24,-24 v -287.4 l -114.8,120.5 c -9.3,9.8 -24.8,10 -34.3,0.4 z"
+            id="path2021"
+            style="fill: #ffffff"
+          />
         </symbol>
         <symbol
           id="arrow_left"
-          viewBox="0 0 46.059811 38.005089"
+          viewBox="0 0 448.04999 436.70001"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:svg="http://www.w3.org/2000/svg"
         >
-          <defs id="defs1115" />
-          <g id="layer1" transform="translate(-7.1872,-47.584552)">
-            <path
-              id="Destination0.Direction.Left"
-              style="
-                fill: #ffffff;
-                fill-opacity: 1;
-                stroke: none;
-                stroke-width: 0.19043px;
-                stroke-linecap: butt;
-                stroke-linejoin: miter;
-                stroke-opacity: 1;
-              "
-              d="m 26.18948,47.584552 4.81259,4.812601 -9.43475,9.435249 h 31.67969 v 9.509879 H 21.56732 l 9.43429,9.434779 h 9.3e-4 l -4.7e-4,4.61e-4 -4.81212,4.81212 -4.8126,-4.812581 -9.43522,-9.434779 -4.75493,-4.75542 4.75493,-4.754459 9.43475,-9.435249 z"
-            />
-          </g>
+          <defs id="defs2027" />
+          <path
+            d="m 257.55,407.45 -22.2,22.2 c -9.4,9.4 -24.6,9.4 -33.9,0 L 7.05,235.35 c -9.4,-9.4 -9.4,-24.6 0,-33.9 L 201.45,7.05 c 9.4,-9.4 24.6,-9.4 33.9,0 l 22.2,22.2 c 9.5,9.5 9.3,25 -0.4,34.3 l -120.5,114.8 h 287.4 c 13.3,0 24,10.7 24,24 v 32 c 0,13.3 -10.7,24 -24,24 h -287.4 l 120.5,114.8 c 9.8,9.3 10,24.8 0.4,34.3 z"
+            id="path2021"
+            style="fill: #ffffff"
+          />
         </symbol>
         <symbol
           viewBox="0 0 19.645241 11.62852"
@@ -441,8 +421,10 @@
         </symbol>
       </defs>
     </svg>
-    {% for signLocation in signLocations %}
-    {% for sign in signLocation['signs']  %}
+    {% for signLocation in signLocations %} 
+    {% for sign in signLocation['signs'] %}
+
+
     <div
       class="page"
       style="
@@ -452,11 +434,17 @@
         border-radius: 20px;
       "
     >
+
       <!-- <text> {{signLocation['name']}} </text> -->
       <div class="sign">
         {% for destination in sign %}
         <div class="dest">
           <div class="dest-top">
+            {% if destination['direction'] == 'left' %}
+            <svg class="arrow">
+              <use href="#arrow_{{destination['direction']}}"></use>
+            </svg>
+            {% endif %}
             <div class="amenities">
               {% for amenity in ['dining', 'grocery', 'skytrain', 'washroom'] %}
               {% if amenity in destination['amenities'] %}
@@ -466,9 +454,12 @@
               {% endif %} {% endfor %}
             </div>
             <text class="dest-name">{{destination['name']}}</text>
-            <svg class="arrow">
+            {% if destination['direction'] == 'up' or destination['direction']
+            == 'right' %}
+            <svg class="arrow arrow-{{destination['direction']}}">
               <use href="#arrow_{{destination['direction']}}"></use>
             </svg>
+            {% endif %}
           </div>
           <div class="dest-bottom">
             <div class="dest-section section-distance">
@@ -496,7 +487,6 @@
         {% endfor %}
       </div>
     </div>
-    {% endfor %}
-    {% endfor %}
+    {% endfor %} {% endfor %}
   </body>
 </html>

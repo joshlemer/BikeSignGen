@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
-   width="38.005089mm"
-   height="46.059811mm"
-   viewBox="0 0 38.005089 46.059811"
+   viewBox="0 0 436.70001 448.04999"
    version="1.1"
-   id="svg1118"
+   id="svg2023"
+   width="436.70001"
+   height="448.04999"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1115" />
-  <g
-     id="layer1"
-     transform="translate(78.47272,-91.212019)">
-    <path
-       id="Destination0.Direction.Up"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.19043px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m -40.46763,110.2143 -4.8126,4.81259 -9.43525,-9.43475 v 31.67969 h -9.50988 v -31.67969 l -9.43478,9.43429 v 9.3e-4 l -4.6e-4,-4.7e-4 -4.81212,-4.81212 4.81258,-4.8126 9.43478,-9.435221 4.75542,-4.75493 4.75446,4.75493 9.43525,9.434751 z" />
-  </g>
+     id="defs2027" />
+  <path
+     d="m 29.25,257.55 -22.2,-22.2 c -9.4,-9.4 -9.4,-24.6 0,-33.9 L 201.35,7.05 c 9.4,-9.4 24.6,-9.4 33.9,0 l 194.4,194.4 c 9.4,9.4 9.4,24.6 0,33.9 l -22.2,22.2 c -9.5,9.5 -25,9.3 -34.3,-0.4 l -114.8,-120.5 v 287.4 c 0,13.3 -10.7,24 -24,24 h -32 c -13.3,0 -24,-10.7 -24,-24 v -287.4 l -114.8,120.5 c -9.3,9.8 -24.8,10 -34.3,0.4 z"
+     id="path2021"
+     style="fill:#ffffff" />
 </svg>
+<!--
+Font Awesome Free 5.2.0 by @fontawesome - https://fontawesome.com
+License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+-->
+

@@ -1,4 +1,7 @@
 destinations:
+  # each key here uniquely identifies a destination. 
+  # Set its name, optionally set its latitude and longitude for automatic distance/traveltime/elevation gain generation
+  # include a list of amenity icons to be included
   cvg:
     name: "Central Valley Greenway"
   bcit:
@@ -10,7 +13,7 @@ destinations:
     name: "Brentwood Mall"
     latitude: 49.2677142
     longitude: -123.0007117
-    amenities: [dining, skytrain, washroom, groceries]
+    amenities: [dining, skytrain, washroom, grocery]
   burnabyHeights:
     name: "Burnaby Heights"
     latitude: 49.2810476
@@ -20,14 +23,17 @@ destinations:
     name: "Gilmore Station"
     latitude: 49.2649269
     longitude: -123.0136247
-    amenities: [dining, skytrain, washroom]
+    amenities: [dining, skytrain]
+  kensingtonSquare:
+    name: "Kensington Square"
+    amenities: [dining, washroom, grocery]
   metrotown:
     name: "Metrotown"
     latitude: 49.227382
     longitude: -122.998239
-    amenities: [dining, skytrain, washroom, groceries]
+    amenities: [dining, skytrain, washroom, grocery]
   sfu:
-    name: "Simon Fraser U"
+    name: "Simon Fraser University"
     latitude: 49.278099
     longitude: -122.919829
     amenities: []
@@ -35,7 +41,22 @@ destinations:
     name: "Lougheed Mall"
     latitude: 49.249789
     longitude: -122.896613
-    amenities: [dining, skytrain, washroom, groceries]
+    amenities: [dining, skytrain, washroom, grocery]
+
+  circleKHastingsHoldom:
+    name: "Circle K Strip Mall"
+    amentities: [dining]
+  downtownVancouver:
+    name: "Downtown Vancouver"
+    amenities: []
+
+# each sign location is the location of one (or more, if there's too many destinations on it) sign 
+# Include the name of the sign location, and its destinations
+# each destination key should match one of the above destination's key
+# include the direction that the arrow should point (left, right, up),
+# include latitude and longitude in order to generate automatically travelTime/distance/elevationGain
+# also optionally you can set elevationGain, travelTime, distance, to override optional calculation
+# destinations will automatically be ordered on the sign starting from closest to furthest destination
 signLocations:
   - name: "Holdom Southbound at Goring"
     destinations:
@@ -51,7 +72,7 @@ signLocations:
     longitude: -123.014478
     destinations:
       gilmoreStation:
-        direction: left
+        direction: up
       brentwoodMall:
         direction: left
       burnabyHeights:
@@ -64,4 +85,16 @@ signLocations:
         direction: right
       metrotown:
         direction: right
+  - name: "Fell Southbound at Frances"
+    destinations:
+      downtownVancouver:
+        direction: right 
+      kensingtonSquare:
+        direction: left
+      sfu:
+        direction: left
+
+
+      
+      
 
