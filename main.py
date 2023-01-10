@@ -300,15 +300,15 @@ async def main2():
     )
     template = env.get_template('test2.html')
     html_str = template.render({ 'signLocations': sign_locations })
-    browser = await launch({'headless': False})
+    browser = await launch({'headless': True})
     page = await browser.newPage()
 
     await page.setContent(html_str)
-    while not page.isClosed():
-        sleep(1)
+    # while not page.isClosed():
+    #     sleep(1)
 
     await page.pdf({
-        'path': 'out2.pdf',
+        'path': 'out/signs.pdf',
         'printBackground': True,
         'format': 'Tabloid',
     })
